@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/pageBaseContent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/pageImage"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/pageStory"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/pageImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            android:id="@+id/pageDOC"
+            android:textColor="#212121"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/pageStory"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:id="@+id/pageMessage"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pageDOC"
+            />
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/pageMessage"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/pageBaseContent"
+        android:visibility="visible"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/pageImage"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/pageStory"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/pageImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            android:id="@+id/pageDOC"
+            android:textColor="#212121"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/pageStory"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:id="@+id/pageMessage"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pageStory"
+            />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Like "
+                android:id="@+id/likeButton"
+                android:layout_below="@+id/pageMessage"
+                android:layout_marginLeft="2dp"/>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:id="@+id/comment"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/pageMessage"/>
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="share"
+                android:layout_below="@+id/pageMessage"
+                android:layout_marginLeft="260dp"
+                android:id="@+id/share"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/share"
+                android:layout_below="@+id/pageMessage"
+                android:textColor="#222222"
+                android:layout_marginTop="20dp"
+                android:id="@+id/count"/>
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/pageMessage"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"
+            />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:visibility="invisible"
+                 android:id="@+id/commentContent">
+                 <TextView
+                     android:layout_height="40dp"
+                     android:layout_width="match_parent"
+                     android:id="@+id/commentsDisplay"
+                     android:text="hellow"
+                     />
+
+
+             </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+-->

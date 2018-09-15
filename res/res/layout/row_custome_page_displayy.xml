@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BFC9CA">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/pageBaseContentt">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/pageImage"
+                android:visibility="visible"
+                android:layout_marginTop="1dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/pageStory"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/pageImage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                android:id="@+id/pageDOC"
+                android:textColor="#212121"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/pageStory"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:id="@+id/pageMessage"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/pageDOC"
+                />
+
+         <!--   <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/knowMore"
+                android:layout_below="@id/pageMessage"
+                android:layout_marginLeft="100dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@color/com_facebook_blue">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Go to Facebook"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>   -->
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/pageMessage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cardview_dark_background"
+                android:id="@+id/view"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:id="@+id/pageBaseContent">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/like"
+                android:id="@+id/like"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:text="Like"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/like"
+                android:textStyle="bold"
+                android:id="@+id/likeText"/>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/likeText"
+                android:background="@drawable/comment"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/comment"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Comment"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/comment"
+                android:textStyle="bold"
+                android:id="@+id/CommentText"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/CommentText"
+                android:background="@drawable/share"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/share"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Share"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/share"
+                android:textStyle="bold"
+                android:id="@+id/shareText"
+                />
+
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
